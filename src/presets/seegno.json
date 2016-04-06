@@ -37,6 +37,7 @@
   "disallowSpacesInsideArrayBrackets": true,
   "disallowSpacesInsideParentheses": true,
   "disallowSpacesInsideParenthesizedExpression": true,
+  "disallowSpacesInsideTemplateStringPlaceholders": true,
   "disallowTrailingComma": true,
   "disallowTrailingWhitespace": true,
   "disallowYodaConditions": true,
@@ -117,6 +118,7 @@
   "requireSpaceAfterLineComment": true,
   "requireSpaceBeforeBinaryOperators": true,
   "requireSpaceBeforeBlockStatements": true,
+  "requireSpaceBeforeDestructuredValues": true,
   "requireSpaceBeforeKeywords": [
     "catch",
     "else",
