@@ -27,12 +27,12 @@
   "homepage": "https://github.com/seegno/jscs-preset-seegno#readme",
   "dependencies": {
     "lodash.get": "^4.1.2",
+    "should": "^8.3.0",
     "sql-parse": "^0.1.5"
   },
   "devDependencies": {
     "jscs": "^2.8.0",
-    "mocha": "^2.3.3",
-    "should": "^8.0.2"
+    "mocha": "^2.3.3"
   },
   "engines": {
     "node": ">=4"
