@@ -4,7 +4,7 @@ Seegno-flavored JSCS preset.
 ## Installation
 
 ```sh
-$ npm install jscs jscs-preset-seegno should --save-dev
+$ npm install jscs jscs-preset-seegno --save-dev
 ```
 
 ## Usage

@@ -2,29 +2,26 @@
   "name": "jscs-preset-seegno",
   "version": "0.0.1",
   "description": "Seegno-flavored JSCS preset",
-  "main": "src/presets/seegno.json",
-  "options": {
-    "mocha": "--recursive --require should test"
-  },
-  "scripts": {
-    "lint": "jscs . -c ./src/presets/seegno.json",
-    "test": "mocha $npm_package_options_mocha"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/seegno/jscs-preset-seegno.git"
-  },
   "keywords": [
     "jscs",
     "lint",
     "preset"
   ],
-  "author": "Seegno",
-  "license": "MIT",
+  "homepage": "https://github.com/seegno/jscs-preset-seegno#readme",
   "bugs": {
     "url": "https://github.com/seegno/jscs-preset-seegno/issues"
   },
-  "homepage": "https://github.com/seegno/jscs-preset-seegno#readme",
+  "license": "MIT",
+  "author": "Seegno",
+  "main": "src/presets/seegno.json",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/seegno/jscs-preset-seegno.git"
+  },
+  "scripts": {
+    "lint": "jscs . -c ./src/presets/seegno.json",
+    "test": "mocha $npm_package_options_mocha"
+  },
   "dependencies": {
     "lodash.get": "^4.1.2",
     "sql-parse": "^0.1.5"
@@ -34,7 +31,13 @@
     "mocha": "^2.3.3",
     "should": "^8.0.2"
   },
+  "optionalDependencies": {
+    "should": ">=8 <9"
+  },
   "engines": {
     "node": ">=4"
+  },
+  "options": {
+    "mocha": "--recursive --require should test"
   }
 }
