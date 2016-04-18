@@ -103,35 +103,6 @@ describe('foobar', function *() {
 });
 ```
 
-### `requireShouldAssertionExecution`
-Disallows the usage of test expectation properties in favor of methods with libraries such as `should`.
-
-Due to the nature of some expectation libraries, it's easy to forget a method `()` which might result in an assertion that never gets executed. This rule is meant to avoid that issue.
-
-Requires: `should`
-
-Type: `Boolean`
-
-Value: `true`
-
-#### Example
-
-```json
-requireShouldAssertionExecution: true
-```
-
-#### Valid
-
-```js
-true.should.be.true();
-```
-
-#### Invalid
-
-```js
-true.should.be.true;
-```
-
 ### `requireSqlTemplate`
 Disallows the usage of raw SQL templates with interpolation.
 

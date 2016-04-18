@@ -97,7 +97,6 @@
   ],
   "requireParenthesesAroundIIFE": true,
   "requireSemicolons": true,
-  "requireShouldAssertionExecution": true,
   "requireSpaceAfterBinaryOperators": true,
   "requireSpaceAfterComma": true,
   "requireSpaceAfterKeywords": [
