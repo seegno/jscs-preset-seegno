@@ -24,7 +24,7 @@ module.exports = function() {};
 module.exports.prototype = {
   check: (file, errors) => {
     file.iterateNodesByType('Identifier', (node) => {
-      if (!node.parentNode || !node.parentNode.object || !node.parentNode.object.property) {
+      if (!node.parentElement || !node.parentElement.object || !node.parentElement.object.property) {
         return;
       }
 
@@ -34,17 +34,17 @@ module.exports.prototype = {
       }
 
       // Skip assertion terms that are used in another conditions.
-      if (chains.indexOf(node.parentNode.object.property.name) === -1) {
+      if (chains.indexOf(node.parentElement.object.property.name) === -1) {
         return;
       }
 
       // Allow chaining.
-      if (chains.indexOf(node.name) !== -1 && chains.indexOf(node.parentNode.object.property.name) !== -1) {
+      if (chains.indexOf(node.name) !== -1 && chains.indexOf(node.parentElement.object.property.name) !== -1) {
         return;
       }
 
-      if (node.parentNode.parentNode.type !== 'CallExpression') {
-        errors.add(`You must invoke the assertion in \`should.${node.name}\``, node.loc.end);
+      if (node.parentElement.parentElement.type !== 'CallExpression') {
+        errors.add(`You must invoke the assertion in \`should.${node.name}\``, node);
       }
     });
   },

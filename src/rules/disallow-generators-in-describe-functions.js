@@ -24,10 +24,7 @@ module.exports.prototype = {
           return argument.type === 'FunctionExpression' && argument.generator === true;
         })
         .forEach((argument) => {
-          errors.add(
-            'Do not use generators in describe functions',
-            argument.loc.start
-          );
+          errors.add('Do not use generators in describe functions', argument);
         });
     });
   },

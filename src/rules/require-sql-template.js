@@ -39,7 +39,7 @@ function validate(node, errors) {
   const value = get(node, 'quasis', []).map(x => (x.value.raw)).join('x');
 
   if (type === 'TemplateLiteral' && expressions.length && isSqlQuery(value) && tag !== 'sql') {
-    errors.add('Use the `sql` tagged template literal for raw queries', node.loc.start);
+    errors.add('Use the `sql` tagged template literal for raw queries', node);
   }
 }
 
