@@ -19,7 +19,7 @@ module.exports.prototype = {
         return;
       }
 
-      errors.add(`Do not use \`.only\` in \`${node.object.name}\` functions`, node.property.loc.start);
+      errors.add(`Do not use \`.only\` in \`${node.object.name}\` functions`, node);
     });
   },
 
