@@ -23,7 +23,7 @@ if (requireBlocksOnNewline) { requireBlocksOnNewline = false; }
 
 // `requireCapitalizedComments`.
 
-// Capitalized comment.
+/* Capitalized comment. */
 
 // `requireLineBreakAfterVariableAssignment`.
 const requireLineBreakAfterVariableAssignment1 = 'foo';

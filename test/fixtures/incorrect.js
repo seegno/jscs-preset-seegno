@@ -25,7 +25,7 @@ if (requireBlocksOnNewline) { requireBlocksOnNewline = false; requireBlocksOnNew
 
 // `requireCapitalizedComments`.
 
-// non capitalized comment.
+/* non capitalized comment. */
 
 // `requireLineBreakAfterVariableAssignment`.
 const requireLineBreakAfterVariableAssignment1 = 'foo'; const requireLineBreakAfterVariableAssignment2 = 'bar';
