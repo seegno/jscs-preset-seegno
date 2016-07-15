@@ -7,8 +7,10 @@
     "mocha": "--recursive --require should test"
   },
   "scripts": {
+    "changelog": "github_changelog_generator --no-issues --header-label='# Changelog' --future-release=v$npm_config_future_release && sed -i '' -e :a -e '$d;N;2,4ba' -e 'P;D' CHANGELOG.md",
     "lint": "jscs . -c ./src/presets/seegno.json",
-    "test": "mocha $npm_package_options_mocha"
+    "test": "mocha $npm_package_options_mocha",
+    "version": "npm run changelog --future-release=$npm_package_version && git add -A CHANGELOG.md"
   },
   "repository": {
     "type": "git",
