@@ -30,9 +30,11 @@
     "sql-parse": "^0.1.5"
   },
   "devDependencies": {
-    "jscs": "^2.8.0",
+    "jscs": "^3.0.7",
+    "lodash.omit": "^4.3.0",
     "mocha": "^2.3.3",
-    "should": "^8.0.2"
+    "should": "^9.0.2",
+    "sql-tag": "^0.0.1"
   },
   "engines": {
     "node": ">=4"
