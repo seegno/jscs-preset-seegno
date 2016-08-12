@@ -35,10 +35,6 @@ const requireMatchingFunctionName = {};
 
 requireMatchingFunctionName.foo = function bar() {};
 
-// `requirePaddingNewLineAfterVariableDeclaration`.
-const requirePaddingNewLineAfterVariableDeclaration = { foo: 'bar' };
-requirePaddingNewLineAfterVariableDeclaration.foo = 'baz';
-
 // `requirePaddingNewLinesAfterBlocks` and `requirePaddingNewlinesBeforeKeywords`.
 function requirePaddingNewLinesAfterBlocks() {
   const foo = true;

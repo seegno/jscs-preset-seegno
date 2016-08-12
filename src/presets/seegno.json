@@ -19,7 +19,6 @@
   },
   "requireLineBreakAfterVariableAssignment": true,
   "requireMatchingFunctionName": true,
-  "requirePaddingNewLineAfterVariableDeclaration": true,
   "requirePaddingNewLinesAfterBlocks": {
     "allExcept": [
       "inCallExpressions",
