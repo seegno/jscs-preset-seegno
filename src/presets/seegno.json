@@ -28,9 +28,6 @@
     ]
   },
   "requirePaddingNewLinesBeforeExport": true,
-  "requirePaddingNewLinesBeforeLineComments": {
-    "allExcept": "firstAfterCurly"
-  },
   "requirePaddingNewlinesBeforeKeywords": [
     "case",
     "do",
