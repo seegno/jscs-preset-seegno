@@ -49,10 +49,5 @@ function requirePaddingNewLinesAfterBlocks() {
 const requirePaddingNewLinesBeforeExport = 'foo';
 module.exports = requirePaddingNewLinesBeforeExport;
 
-// `requirePaddingNewLinesBeforeLineComments`.
-const requirePaddingNewLinesBeforeLineComments1 = 'foo';
-// A comment.
-const requirePaddingNewLinesBeforeLineComments2 = 'bar';
-
 // `requireSqlTemplate`.
 const requireSqlTemplate = `SELECT * FROM ${'foobar'}`;
