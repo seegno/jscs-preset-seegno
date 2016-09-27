@@ -1,10 +1,5 @@
 {
   "additionalRules": [ "../rules/*.js" ],
-  "disallowKeywordsOnNewLine": [
-    "catch",
-    "else",
-    "while"
-  ],
   "disallowNewlineBeforeBlockStatements": true,
   "excludeFiles": [
     ".git",

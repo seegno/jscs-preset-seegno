@@ -1,15 +1,5 @@
 'use strict';
 
-// `disallowKeywordsOnNewLine`.
-let disallowKeywordsOnNewLine = true;
-
-if (disallowKeywordsOnNewLine) {
-  disallowKeywordsOnNewLine = false;
-}
-else {
-  disallowKeywordsOnNewLine = true;
-}
-
 // `disallowNewlineBeforeBlockStatements`
 let disallowNewlineBeforeBlockStatements = true;
 
